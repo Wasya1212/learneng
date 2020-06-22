@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta(http-equiv="X-UA-Compatible", content="ie=edge")
+  link(rel="stylesheet", href="css/index.css")
+  title Document
+body
+  article
+    header
+      center
+        h1 User #10956863
+  section
+    h2
+      |Your 
+      strong words
+      | for today. Learn it)
+    ul(class="words")
+      each word in (words || [])
+        li(class="words__word-container")
+          span(class="words__word")= word
+  section
+    h2
+      |Your 
+      strong phrases
+      | for today. Enjoy it)
+    ul(class="phrases")
+      each phrase in (phrases || [])
+        li(class="phrases__phrase-container")
+          span(class="phrases__original-phrase")= phrase.original
+          span(class="phrases__translated-phrase")= phrase.translate

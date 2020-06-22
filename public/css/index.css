@@ -1,0 +1,24 @@
+.phrases {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.phrases__phrase-container {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 1rem .5rem;
+  box-sizing: border-box;
+}
+
+.phrases__phrase-container>span {
+  width: 50%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  padding: 0 .5rem;
+  box-sizing: border-box;
+  cursor: default;
+}
