@@ -16,7 +16,7 @@ const Router = require('koa-router');
 const Serve = require('koa-static');
 
 // constants
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const PAGE = FS.readFileSync(__dirname + '/views/layout.pug');
 
 const app = new Koa();
